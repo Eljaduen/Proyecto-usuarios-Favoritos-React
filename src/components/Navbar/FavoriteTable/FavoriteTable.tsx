@@ -82,8 +82,7 @@ const FavoriteTable: React.FC<FavoriteTableProps>  = ({}) => {
                 pagination: { paginationModel: { pageSize: pageSize } },
               }}
               pageSizeOptions={[pageSize]}
-			  {...stateFavorites}
-        	  rows={[]}
+              rows={stateFavorites}
               columns={columns}
               getRowId={(row:any) => row.id}
               />
